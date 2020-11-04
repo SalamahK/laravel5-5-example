@@ -1,12 +1,14 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=7.3.24",
-        "barryvdh/elfinder-builds": "v2.1.0.5",
         "barryvdh/elfinder-flysystem-driver": "^0.2.1",
         "barryvdh/laravel-elfinder": "^0.4.6",
         "baum/baum": "^1.1",
@@ -15,7 +17,8 @@
         "creativeorange/gravatar": "^1.0",
         "fideloper/proxy": "~4.0",
         "intervention/image": "^2.4",
-        "laravel/framework": "5.7.*",
+        "laravel/framework": "5.8.*",
+        "laravel/nexmo-notification-channel": "^2.4",
         "laravel/tinker": "~1.0"
     },
     "require-dev": {
@@ -23,9 +26,9 @@
         "barryvdh/laravel-ide-helper": "^2.3",
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
-        "laravel/dusk": "^4.0",
+        "laravel/dusk": "^5.0.0",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~7.0"
+        "phpunit/phpunit": "~8.0"
     },
     "autoload": {
         "classmap": [
