@@ -36,7 +36,10 @@ class AppServiceProvider extends ServiceProvider
         Blade::if('request', function ($url) {
             return request()->is($url);
         });
-       
+
+        // Paginator::useBootstrap();
+
+
     }
 
     /**

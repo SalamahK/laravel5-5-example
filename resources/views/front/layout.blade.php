@@ -55,13 +55,14 @@
 
    	<div class="row header-content">
 
+
    		<div class="logo">
 	    	<a href="{{ url('') }}">Author</a>
 	    </div>
 
 	   	<nav id="main-nav-wrap">
 			<ul class="main-navigation sf-menu">
-				<li {{ currentRoute('home') }}>
+				<li {{ view ('home') }}>
 					<a href="{{ route('home') }}">@lang('Home')</a>
 				</li>
 				<li class="has-children">
@@ -73,7 +74,7 @@
 					</ul>
 				</li>
 				@guest
-					<li {{ currentRoute('contacts.create') }}>
+					<li {{ route('contacts.create') }}>
 						<a href="{{ route('contacts.create') }}">@lang('Contact')</a>
 					</li>
 				@endguest
@@ -88,7 +89,7 @@
 					</li>
 				@else
 					@guest
-						<li {{ currentRoute('login') }}>
+						<li {{ route('login') }}>
 							<a href="{{ route('login') }}">@lang('Login')</a>
 						</li>
 						@request('password/reset')

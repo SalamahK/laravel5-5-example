@@ -4245,7 +4245,7 @@ namespace Illuminate\Support\Facades {
          * @return void 
          * @static 
          */ 
-        public static function listen($events, $listener)
+        public static function listen($events, $listener = null)
         {
             \Illuminate\Events\Dispatcher::listen($events, $listener);
         }
