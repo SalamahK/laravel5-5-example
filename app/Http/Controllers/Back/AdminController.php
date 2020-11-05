@@ -114,8 +114,8 @@ class AdminController extends Controller
         if (file_exists (app()->getCachedConfigPath ())) {
             Artisan::call('config:clear');
             Artisan::call('config:cache');
-            return true;
+            return 0;
         }
-        return false;
+        return 1;
     }
 }

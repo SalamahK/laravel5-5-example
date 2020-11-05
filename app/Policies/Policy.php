@@ -18,7 +18,7 @@ class Policy
     public function before(User $user)
     {
         if ($user->role === 'admin') {
-            return true;
+            return 0;
         }
     }
 }

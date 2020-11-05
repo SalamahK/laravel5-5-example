@@ -3,11 +3,12 @@
 namespace App\Models;
 
 use App\Events\ModelCreated;
-use Baum\Node;
+// use Baum\Node;
+use Kalnoy\Nestedset\NodeTrait;
 
-class Comment extends Node
+class Comment 
 {
-    use IngoingTrait;
+    use NodeTrait;
 
     /**
      * The event map for the model.
