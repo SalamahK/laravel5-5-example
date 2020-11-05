@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Bestmomo\LaravelEmailConfirmation\Traits\AuthenticatesUsers;
+// use Bestmomo\LaravelEmailConfirmation\Traits\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
@@ -63,5 +64,22 @@ class LoginController extends Controller
             $logKey => $logValue,
             'password' => $request->input('password'),
         ];
+        
     }
+     /**
+     * Handle an authentication attempt.
+     *
+     * @param  \Illuminate\Http\Request $request
+     *
+     * @return Response
+     */
+    public function authenticate(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            // Authentication passed...
+            return redirect()->intended('dashboard');
+        }
+}
 }

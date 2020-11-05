@@ -3,12 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Notifications\ResetPassword as ResetPasswordNotification;
 use App\Events\ModelCreated;
 use Illuminate\Support\Facades\Storage;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
 	use Notifiable, IngoingTrait;
 
@@ -39,6 +40,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
+    
 	/**
      * One to Many relation
      *

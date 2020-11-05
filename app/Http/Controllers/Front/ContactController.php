@@ -39,6 +39,6 @@ class ContactController extends Controller
     {
         Contact::create ($request->all ());
 
-        return back ()->with ('ok', __('Your message has been recorded, we will respond as soon as possible.'));
+        return back ()->with('ok', __('Your message has been recorded, we will respond as soon as possible.'));
     }
 }
