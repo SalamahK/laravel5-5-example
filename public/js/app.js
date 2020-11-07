@@ -49521,7 +49521,7 @@ if (false) {
 /* 44 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Cannot find module 'node-sass'\n    at Function.Module._resolveFilename (module.js:547:15)\n    at Function.Module._load (module.js:474:25)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at Object.sassLoader (/opt/lampp/htdocs/project/seven/node_modules/sass-loader/lib/loader.js:46:72)\n    at runLoaders (/opt/lampp/htdocs/project/seven/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /opt/lampp/htdocs/project/seven/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /opt/lampp/htdocs/project/seven/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at runSyncOrAsync (/opt/lampp/htdocs/project/seven/node_modules/loader-runner/lib/LoaderRunner.js:143:3)\n    at iterateNormalLoaders (/opt/lampp/htdocs/project/seven/node_modules/loader-runner/lib/LoaderRunner.js:232:2)\n    at /opt/lampp/htdocs/project/seven/node_modules/loader-runner/lib/LoaderRunner.js:205:4\n    at /opt/lampp/htdocs/project/seven/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
